@@ -33,6 +33,7 @@ export const SearchInput = styled.input`
   font-size: 15px;
   margin-bottom: 24px;
   margin-top: 6px;
+  border-radius: 15px;
 `
 
 export const FilterSelect = styled.select`
@@ -42,6 +43,7 @@ export const FilterSelect = styled.select`
   font-size: 15px;
   margin-top: 6px;
   margin-bottom: 28px;
+  border-radius: 15px;
 `
 
 export const ButtonAdd = styled.button`

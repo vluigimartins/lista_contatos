@@ -1,13 +1,16 @@
+import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { AiFillMail, AiFillPhone, AiOutlineClose } from 'react-icons/ai'
 import perfil from '../../assets/image/perfil.jpg'
+import { remover } from '../../store/reducers/contatos'
 
 import * as S from './styles'
 import Contato from '../../models/Contato'
 
 export type Props = Contato
 
-const ContactItem = ({ nome, telefone, email }: Props) => {
+const ContactItem = ({ nome, telefone, email, id }: Props) => {
+  const dispatch = useDispatch()
   const navigate = useNavigate()
 
   return (
@@ -27,7 +30,7 @@ const ContactItem = ({ nome, telefone, email }: Props) => {
             </S.EmailButton>
           </div>
         </S.DataContainer>
-        <S.RemoveButton>
+        <S.RemoveButton onClick={() => dispatch(remover(id))}>
           <AiOutlineClose size={25} />
         </S.RemoveButton>
       </S.ContactContainer>

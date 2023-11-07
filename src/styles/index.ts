@@ -11,7 +11,7 @@ const EstiloGlobal = createGlobalStyle`
   body {
     background-image: url('https://cdn.pixabay.com/photo/2018/09/24/10/19/system-3699542_1280.jpg');
     background-position: center;
-    background-size: auto;
+    background-size: cover;
   }
 `
 

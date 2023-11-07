@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { FormEvent, useState } from 'react'
+
 import perfil from '../../assets/image/perfil.jpg'
 import * as S from './styles'
 import { cadastrar } from '../../store/reducers/contatos'
@@ -29,18 +30,21 @@ const Cadastro = () => {
             onChange={(evento) => setNome(evento.target.value)}
             type="text"
             placeholder="Nome do contato"
+            required
           />
           <S.AddInput
             value={telefone}
             onChange={(evento) => setTelefone(evento.target.value)}
             type="number"
             placeholder="Telefone"
+            required
           />
           <S.AddInput
             value={email}
             onChange={(evento) => setEmail(evento.target.value)}
             type="text"
             placeholder="E-mail"
+            required
           />
           <S.AddButton type="submit">Salvar</S.AddButton>
           <S.RemoveButton type="submit" onClick={() => navigate('/')}>

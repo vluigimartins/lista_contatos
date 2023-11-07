@@ -46,7 +46,6 @@ export const ContactButton = styled.button`
   background-color: ${variaveis.verde};
   color: ${variaveis.preto};
   border: none;
-  cursor: pointer;
   border-radius: 10px;
 `
 
