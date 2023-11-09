@@ -8,10 +8,20 @@ export const Container = styled.div`
   padding: 50px;
   border-radius: 25px;
 
-  .container-option {
+  .container-pesquisa {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    margin-bottom: 24px;
+    margin-top: 6px;
+    border-radius: 25px;
+    background-color: ${variaveis.branco};
+    padding: 5px;
+  }
+
+  .container-option {
+    display: flex;
+    justify-content: flex-end;
   }
 `
 
@@ -21,29 +31,15 @@ export const Title = styled.h1`
   margin-bottom: 35px;
 `
 
-export const Label = styled.label`
-  font-size: 22px;
-  font-weight: bold;
-`
-
 export const SearchInput = styled.input`
-  width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  width: 100%;
   font-size: 15px;
-  margin-bottom: 24px;
-  margin-top: 6px;
-  border-radius: 15px;
-`
-
-export const FilterSelect = styled.select`
-  width: 20%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  font-size: 15px;
-  margin-top: 6px;
-  margin-bottom: 28px;
-  border-radius: 15px;
+  background-color: ${variaveis.branco};
+  border: none;
+  margin-left: 4px;
+  border-radius: 5px;
+  outline: 0;
 `
 
 export const ButtonAdd = styled.button`

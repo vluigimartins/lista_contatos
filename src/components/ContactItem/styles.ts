@@ -11,14 +11,6 @@ export const ContactContainer = styled.div`
   background-color: ${variaveis.azul};
   border-radius: 25px;
   display: flex;
-
-  h3 {
-    display: flex;
-    font-size: 20px;
-    margin-bottom: 25px;
-    color: ${variaveis.branco};
-    cursor: pointer;
-  }
 `
 
 export const ContactImage = styled.img`
@@ -30,23 +22,39 @@ export const ContactImage = styled.img`
 export const DataContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: 25px;
+
+  .container-telefone {
+    display: flex;
+    background-color: ${variaveis.verde};
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 25px;
+  }
+
+  .container-email {
+    display: flex;
+    background-color: ${variaveis.amarelo};
+    padding: 5px;
+    border-radius: 25px;
+  }
 `
 
-export const ContactName = styled.h2`
-  font-size: 16px;
+export const ContactName = styled.h3`
+  display: flex;
+  background-color: ${variaveis.azul};
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: ${variaveis.branco};
 `
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.input`
   display: flex;
   font-size: 15px;
-  margin-bottom: 10px;
-  padding: 5px 10px;
   background-color: ${variaveis.verde};
   color: ${variaveis.preto};
   border: none;
-  border-radius: 10px;
+  width: 100%;
 `
 
 export const EmailButton = styled(ContactButton)`
@@ -55,8 +63,17 @@ export const EmailButton = styled(ContactButton)`
 
 export const RemoveButton = styled.span`
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 5px;
+  padding: 13px;
+  color: ${variaveis.branco};
+  cursor: pointer;
+`
+
+export const EditButton = styled.span`
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
   padding: 13px;
   color: ${variaveis.branco};
   cursor: pointer;
