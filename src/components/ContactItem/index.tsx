@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux'
+import { useEffect, useState } from 'react'
 import { remover } from '../../store/reducers/contatos'
 import {
   AiFillMail,
@@ -6,12 +7,12 @@ import {
   AiOutlineClose,
   AiFillEdit
 } from 'react-icons/ai'
+
+import * as S from './styles'
+
 import perfil from '../../assets/image/perfil.jpg'
 
 import Contato from '../../models/Contato'
-
-import * as S from './styles'
-import { useEffect, useState } from 'react'
 
 export type Props = Contato
 
@@ -34,7 +35,7 @@ const ContactItem = ({ nome, telefone, email, id, imagemPerfil }: Props) => {
       <S.ContactContainer>
         <S.ContactImage src={imagemPerfil || perfil} alt="Contact" />
         <S.DataContainer>
-          <div>
+          <div className="container-dados">
             <S.ContactName>{nome}</S.ContactName>
             <div className="container-telefone">
               <AiFillPhone size={18} style={{ marginRight: '8px' }} />

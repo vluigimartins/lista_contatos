@@ -23,6 +23,12 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-end;
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 20px;
+    margin-top: 50px;
+  }
 `
 
 export const Title = styled.h1`
@@ -34,7 +40,7 @@ export const Title = styled.h1`
 export const SearchInput = styled.input`
   padding: 8px;
   width: 100%;
-  font-size: 15px;
+  font-size: 16px;
   background-color: ${variaveis.branco};
   border: none;
   margin-left: 4px;
@@ -60,4 +66,9 @@ export const ContactsContainer = styled.div`
   column-gap: 15px;
   width: 100%;
   margin-top: 12px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 `

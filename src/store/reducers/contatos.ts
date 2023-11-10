@@ -9,19 +9,19 @@ const initialState: ContatosState = {
   itens: [
     {
       id: 1,
-      nome: 'William José',
-      telefone: '67987654123',
-      email: 'willianjm@outlook.com',
-      imagemPerfil:
-        'https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887_640.jpg'
-    },
-    {
-      id: 2,
       nome: 'Armindo Freitas',
       telefone: '41998568745',
       email: 'armindofs@gmail.com',
       imagemPerfil:
         'https://cdn.pixabay.com/photo/2016/07/22/16/54/portrait-1535266_640.jpg'
+    },
+    {
+      id: 2,
+      nome: 'William José',
+      telefone: '67987654123',
+      email: 'willianjm@outlook.com',
+      imagemPerfil:
+        'https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887_640.jpg'
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const initialState: ContatosState = {
       nome: 'Afonso Rodrigues',
       telefone: '44951657449',
       email: 'arodrugues@gmail.com',
-      imagemPerfil: null
+      imagemPerfil: ''
     }
   ]
 }

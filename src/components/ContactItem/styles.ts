@@ -11,6 +11,13 @@ export const ContactContainer = styled.div`
   background-color: ${variaveis.azul};
   border-radius: 25px;
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const ContactImage = styled.img`
@@ -23,6 +30,10 @@ export const DataContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
+
+  .container-dados {
+    width: 100%;
+  }
 
   .container-telefone {
     display: flex;
@@ -38,23 +49,38 @@ export const DataContainer = styled.div`
     padding: 5px;
     border-radius: 25px;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+
+    .container-dados {
+      width: 80%;
+    }
+  }
 `
 
 export const ContactName = styled.h3`
-  display: flex;
   background-color: ${variaveis.azul};
   font-size: 20px;
   margin-bottom: 25px;
   color: ${variaveis.branco};
+
+  @media (max-width: 768px) {
+    margin-top: 8px;
+  }
 `
 
 export const ContactButton = styled.input`
   display: flex;
+  width: 100%;
   font-size: 15px;
   background-color: ${variaveis.verde};
   color: ${variaveis.preto};
   border: none;
-  width: 100%;
 `
 
 export const EmailButton = styled(ContactButton)`
@@ -77,4 +103,10 @@ export const EditButton = styled.span`
   padding: 13px;
   color: ${variaveis.branco};
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    left: 0px;
+    right: 100%;
+    top: 0;
+  }
 `

@@ -3,14 +3,14 @@ class Contato {
   telefone: string
   email: string
   id: number
-  imagemPerfil: string | null
+  imagemPerfil: string | ''
 
   constructor(
     nome: string,
     telefone: string,
     email: string,
     id: number,
-    imagemPerfil: string | null = null
+    imagemPerfil: string | ''
   ) {
     this.nome = nome
     this.telefone = telefone

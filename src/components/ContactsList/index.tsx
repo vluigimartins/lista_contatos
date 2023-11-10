@@ -4,9 +4,9 @@ import { RootReducer } from '../../store'
 import { alterarTermo } from '../../store/reducers/filtro'
 import { AiOutlineUserAdd, AiOutlineSearch } from 'react-icons/ai'
 
-import ContactItem from '../ContactItem'
-
 import * as S from './styles'
+
+import ContactItem from '../ContactItem'
 
 const ContactsList = () => {
   const dispatch = useDispatch()

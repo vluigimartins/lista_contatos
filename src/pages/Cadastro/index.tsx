@@ -56,9 +56,9 @@ const Cadastro = () => {
             required
           />
           <S.AddButton type="submit">Salvar</S.AddButton>
-          <S.RemoveButton type="button" onClick={() => navigate('/')}>
+          <S.CancelButton type="button" onClick={() => navigate('/')}>
             Cancelar
-          </S.RemoveButton>
+          </S.CancelButton>
         </S.FormContainer>
       </form>
     </S.AddContainer>

@@ -3,17 +3,22 @@ import variaveis from '../../styles/variaveis'
 
 export const AddContainer = styled.div`
   display: flex;
-  position: relative;
   justify-content: center;
   width: 800px;
   margin: 120px auto;
   background-color: ${variaveis.azul};
   padding: 50px;
   border-radius: 55px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const FormContainer = styled.div`
-  width: 650px;
+  width: 100%;
   text-align: center;
 `
 
@@ -32,10 +37,11 @@ export const AddInput = styled.input`
   margin-bottom: 24px;
   margin-top: 15px;
   border-radius: 15px;
+  outline: 0;
 `
 
 export const AddButton = styled.button`
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 60px;
   padding: 13px;
   width: 120px;
@@ -44,8 +50,13 @@ export const AddButton = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 25px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 5px 0;
+  }
 `
 
-export const RemoveButton = styled(AddButton)`
+export const CancelButton = styled(AddButton)`
   background-color: ${variaveis.vermelho};
 `
